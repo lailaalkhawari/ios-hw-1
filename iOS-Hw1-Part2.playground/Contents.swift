@@ -1,7 +1,6 @@
 import UIKit
 
 
-
 //: # 1️⃣ السؤال الاول
 /*:
  #
@@ -16,28 +15,28 @@ import UIKit
  1.5) استعمل if statement , اذا كانت المصفوفة تحتوي على بيتزا قم بطباعه "yumm Pizza🍕😋"
 
 */
-
-
-
+var favFood = ["pasta" , "apple" , "marag bamya" , "icea cream"]
+favFood += ["pizza"]
+print(favFood[0])
+for food in favFood {
+    print(food)
+    if food == "pizza"  {
+        print("yummm pizza")
+    }
+}
 
 
 //: # 2️⃣  السؤال الثاني
 var numbers = [1,2,3,4,5,6,7,8,9,10]
-/*:
+var evenNumbers : [Int] = []
+for number in numbers{
+    print(numbers)
+    if number % 2 == 0 {
+        print(numbers)
+        evenNumbers.append(number)
+    }
+}
 
-##
-2.1) قم بكتابه مصفوفه evenNumbers فارغه من نوع int لتعبئه الارقام الزوجيه من مصفوفه numbers
- ##
- 2.2) قم بحساب الاعداد الزوجيه even number من خلال الدوران على مصفوفه number
- ##
- 2.3) استعمل if-Statement  مع العمليات الحسابيه لتاكد اذا كان الرقم من مصفوفه number زوجي ام لا
- ##
- 2.4) اذا الرقم زوجي اضيف الرقم الى المصفوفه evenNumbers
-
-##
- ملاحظة: معادله الرقم الزوجي number % 2 == 0
-
-*/
 
 //: # 3️⃣  السؤال الثالث
 /*:
@@ -56,4 +55,14 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
 
  
  */
-   
+for five in 1...5{
+    for ten in 1...10{
+        print("\(five) X \(ten) = \(five*ten)")
+        
+    }
+}
+// bounus 
+for square in 1...4{
+    print("******")
+}
+
